@@ -1,25 +1,127 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Example</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags unless you know what you are doing -->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<head>
+  <title>TodoApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `script` tags unless you know what you are doing -->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body class="container-fluid">
-      <h1>Example</h1>
+  <!-- Do not add `link` tags unless you know what you are doing -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
-    </body>
+  <!-- Do not add `script` tags unless you know what you are doing -->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body>
+  <h1> TodoApp</h1>
+  <h2> because you dont need to remember everything</h2>
+
+<!-- nav bar  -->
+  <ul class="nav">
+    <li>Home</li>
+    <li>My Notes</li>
+    <li>Create a Notes</li>
+    <li>My Notes</li>
+  </ul>
+  <!-- nav bar  auth-->
+  <ul class="buttons">
+    <li id="sign-up-btb" class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Sign up</b> </a>
+      <ul id="sign-up1" class="dropdown-menu">
+        <li>
+          <div class="row">
+            <div class="col-md-12">
+
+
+              <form id="sign-up">
+                <fieldset>
+
+                  <label>
+                  Email
+                  <input type="text" name="credentials[email]">
+                </label>
+                  <label>
+                  Password
+                  <input type="password" name="credentials[password]">
+                </label>
+                  <label>
+                  Password Confirmation
+                  <input type="password" name="credentials[password_confirmation]">
+                </label>
+                  <input  type="submit" name="submit" value="Sign up!" >
+                </fieldset>
+              </form>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="dropdown signinhide">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Sign in</b> </a>
+      <ul class="dropdown-menu">
+        <li>
+          <div class="row">
+            <div class="col-md-12">
+
+
+              <form id="sign-in">
+                <fieldset>
+
+                  <label>
+                          Email
+                          <input type="text" name="credentials[email]">
+                        </label>
+                  <label>
+                          Password
+                          <input type="password" name="credentials[password]">
+                        </label>
+                  <input type="submit" name="submit" value="Sign in!" >
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown changebtn">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Change Password</b> </a>
+      <ul id="change-password1" class="dropdown-menu">
+        <li>
+          <div class="row">
+            <div class="col-md-12">
+
+
+              <form id="change-password">
+                <fieldset>
+
+                  <label>
+                        Current Password
+                        <input type="password" name="passwords[old]">
+                      </label>
+                  <label>
+                        New Password
+                        <input type="password" name="passwords[new]">
+                      </label>
+
+                  <input type="submit" name="submit" value="Change Password!">
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+  <li>  <a href="#" id="sign-out" class="  "><b>Sign Out</b> </a> </li>
+
+    <!-- <li><button type="button" name="button">Sign Out</button></li>
+        <li><button type="button" name="button">Sign In</button></li>
+        <li><button type="button" name="button">Change Password</button></li> -->
+  </ul>
+
+
+</body>
+
 </html>
