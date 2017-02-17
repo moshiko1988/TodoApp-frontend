@@ -17,11 +17,11 @@
   <h1> TodoApp</h1>
   <h2> because you dont need to remember everything</h2>
 
-<!-- nav bar  -->
+  <!-- nav bar  -->
   <ul class="nav">
     <li>Home</li>
     <li>My Notes</li>
-    <li>Create a Notes</li>
+    <li>Add</li>
     <li>My Notes</li>
   </ul>
   <!-- nav bar  auth-->
@@ -49,7 +49,7 @@
                   Password Confirmation
                   <input type="password" name="credentials[password_confirmation]">
                 </label>
-                  <input  type="submit" name="submit" value="Sign up!" >
+                  <input type="submit" name="submit" value="Sign up!">
                 </fieldset>
               </form>
 
@@ -78,7 +78,7 @@
                           Password
                           <input type="password" name="credentials[password]">
                         </label>
-                  <input type="submit" name="submit" value="Sign in!" >
+                  <input type="submit" name="submit" value="Sign in!">
                 </fieldset>
               </form>
             </div>
@@ -114,12 +114,49 @@
         </li>
       </ul>
     </li>
-  <li>  <a href="#" id="sign-out" class="  "><b>Sign Out</b> </a> </li>
+    <li> <a href="#" id="sign-out" class="  "><b>Sign Out</b> </a> </li>
 
     <!-- <li><button type="button" name="button">Sign Out</button></li>
         <li><button type="button" name="button">Sign In</button></li>
         <li><button type="button" name="button">Change Password</button></li> -->
   </ul>
+
+
+
+
+
+  <form class="books" id="book-search">
+    <div class="form-group">
+      <input type="text" name="list[id]" placeholder="ID of book to search">
+    </div>
+    <button type="submit" class="btn btn-info">Search</button>
+  </form>
+  </br>
+  <form class='books' id="edit-book">
+    <div class="form-group">
+      <input type="text" name="list[id]" placeholder="Edit Resource ID ">
+      <input type="text" name="list[note]" placeholder="Edit Resource Title ">
+    </div>
+    <button type="submit" class="btn btn-info">Edit Book Title</button>
+  </form>
+  </br>
+  <form class='books' id="create-book">
+    <div class="form-group">
+      <input type="text" name="list[note]" placeholder="Create Resource title ">
+
+    </div>
+    <button type="submit" class="btn btn-info">create Book Title</button>
+  </form>
+  </br>
+  <form class="books" id="book-destroy">
+    <div class="form-group">
+      <input type="text" name="list[id]" placeholder="ID of book to delete">
+    </div>
+
+    <button type="submit" class="btn btn-danger">Delete Book</button>
+  </form>
+      </body>
+
 
 
 </body>
