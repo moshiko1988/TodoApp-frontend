@@ -2,8 +2,8 @@
 
 const onSuccess = function (data) {
 //  debugger;
-  if (data.list) {
-    console.log(data.list);
+  if (data) {
+    console.log(data);
   } else {
     console.table(data.lists);
   }
@@ -14,12 +14,13 @@ const onError = function (response) {
 };
 
 const onDeleteSuccess = function () {
-  console.log('Book was successfully deleted.');
+  console.log('2 was successfully deleted.');
 };
 const onPatchSuccess = function () {
-  console.log('Book was successfully patched.');
+  console.log('1 was successfully patched.');
 };
-const onCreateSuccess = function () {
+const onCreateSuccess = function (data) {
+  console.log(data);
   console.log('list was successfully created.');
 };
 module.exports = {
