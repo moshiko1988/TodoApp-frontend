@@ -15,5 +15,5 @@ const authEvents = require('./auth/events.js');
 const lists = require('./lists/events.js');
 $(() => {
   authEvents.addHandlers();
-  lists.lists();
+  lists.addHandlers();
 });

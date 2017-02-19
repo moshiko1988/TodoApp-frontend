@@ -11,20 +11,26 @@ const getFormFields = require('../../../lib/get-form-fields.js');
 // also, follow a convention for handlers. here, I name my handler
 // beginning with 'on' to denote that it is done when the GET /books
 // button is clicked
-const onGetList = function (event) {
+// const onGetList = function (event) {
+//   event.preventDefault();
+//   let data = getFormFields(event.target);
+//
+//   if (data.list.id.length === 0){
+//       api.index()
+//         .then(ui.getListSuccess)
+//         .catch(ui.onError);
+//   } else {
+//     api.show(data.list.id)
+//       .then(ui.getListSuccess)
+//       .catch(ui.onError);
+//   }
+//
+// };
+const onGetList = (event) => {
   event.preventDefault();
-  let data = getFormFields(event.target);
-
-  if (data.list.id.length === 0){
-      api.index()
-        .then(ui.onSuccess)
-        .catch(ui.onError);
-  } else {
-    api.show(data.list.id)
-      .then(ui.onSuccess)
-      .catch(ui.onError);
-  }
-
+  api.index()
+    .then(ui.getListSuccess)
+    .catch(ui.failure);
 };
 
 const onDeleteList = function(event){
@@ -58,12 +64,14 @@ const onCreateList = function(event){
 };
 
 
-const lists = () => {
+const addHandlers = () => {
   $('#book-search').on('submit', onGetList);
   $('#book-destroy').on('submit', onDeleteList);
   $('#edit-book').on('submit', onPatcheList);
   $('#create-book').on('submit', onCreateList);
+  $('#getListButton').on('click', onGetList);
+
 };
 module.exports = {
-  lists
+  addHandlers
 };
