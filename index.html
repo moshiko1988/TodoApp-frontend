@@ -19,10 +19,97 @@
 
   <!-- nav bar  -->
   <ul class="nav">
-    <li>Home</li>
-    <li>My Notes</li>
-    <li>Add</li>
-    <li>My Notes</li>
+
+    <li  class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>edit list</b> </a>
+      <ul  class="dropdown-menu">
+        <li>
+          <div class="row">
+            <div class="col-md-12">
+
+
+              <form class='books' id="edit-book">
+                <div class="form-group">
+                  <input type="text" name="list[id]" placeholder="Enter list ID ">
+                  <input type="text" name="list[note]" placeholder="Edit list ">
+                </div>
+                <button type="submit" class="btn btn-info">Edit Note </button>
+              </form>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li  class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Get lists</b> </a>
+      <ul  class="dropdown-menu">
+        <li>
+          <div class="row">
+            <div class="col-md-12">
+
+
+              <form class="books" id="book-search">
+                <div class="form-group">
+                  <input type="text" name="list[id]" placeholder="ID of list to search">
+                </div>
+                <button type="submit" class="btn btn-info">Search</button>
+                <button id="getListButton" class="btn btn-info">Get All Lists!</button>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+      <li id="add" class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Add list</b> </a>
+        <ul id="addddd" class="dropdown-menu">
+          <li>
+            <div class="row">
+              <div class="col-md-12">
+
+
+                <form class='books' id="create-book">
+                    <div class="form-group">
+                      <input type="text" name="list[note]" placeholder="Create Resource title ">
+
+                    </div>
+                    <button type="submit" class="btn btn-info">create Note </button>
+                  </form>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+
+          <li  class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>remove list</b> </a>
+            <ul  class="dropdown-menu">
+              <li>
+                <div class="row">
+                  <div class="col-md-12">
+
+
+                    <form class="books" id="book-destroy">
+                      <div class="form-group">
+                        <input type="text" name="list[id]" placeholder="ID of list to delete">
+                      </div>
+
+
+                      <button type="submit" class="btn btn-danger">Delete Note</button>
+                    </form>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+
+
   </ul>
   <!-- nav bar  auth-->
   <ul class="buttons">
@@ -125,39 +212,15 @@
 
 
 
-  <form class="books" id="book-search">
-    <div class="form-group">
-      <input type="text" name="list[id]" placeholder="ID of note to search">
-    </div>
-    <button type="submit" class="btn btn-info">Search</button>
-  </form>
-  </br>
-  <form class='books' id="edit-book">
-    <div class="form-group">
-      <input type="text" name="list[id]" placeholder="Edit Resource ID ">
-      <input type="text" name="list[note]" placeholder="Edit Resource Title ">
-    </div>
-    <button type="submit" class="btn btn-info">Edit Note </button>
-  </form>
-  </br>
-  <form class='books' id="create-book">
-    <div class="form-group">
-      <input type="text" name="list[note]" placeholder="Create Resource title ">
 
-    </div>
-    <button type="submit" class="btn btn-info">create Note </button>
-  </form>
   </br>
-  <form class="books" id="book-destroy">
-    <div class="form-group">
-      <input type="text" name="list[id]" placeholder="ID of book to delete">
-    </div>
-    <button id="getListButton" class="btn btn-default">Get Lists!</button>
 
-    <button type="submit" class="btn btn-danger">Delete Note</button>
-  </form>
+  </br>
 
-    <div id="content" class="content">uyu
+  </br>
+
+
+    <div id="content" class="content .col-md-8">
     </div>
 </body>
 

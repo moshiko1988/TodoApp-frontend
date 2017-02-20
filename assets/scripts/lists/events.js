@@ -66,7 +66,7 @@ const onCreateList = function(event){
 
 const addHandlers = () => {
   $('#book-search').on('submit', onGetList);
-  $('#book-destroy').on('submit', onDeleteList);
+  $('.remove-list').on('click', onDeleteList);
   $('#edit-book').on('submit', onPatcheList);
   $('#create-book').on('submit', onCreateList);
   $('#getListButton').on('click', onGetList);
