@@ -6,7 +6,7 @@ const showListTemplate = require('../templates/listing.handlebars');
 const getListSuccess = (data) => {
   console.log(data);
   let showListHtml = showListTemplate({ lists: data.lists });
-  $('.content').append(showListHtml);
+  $('.content').empty().append(showListHtml);
 
 };
 

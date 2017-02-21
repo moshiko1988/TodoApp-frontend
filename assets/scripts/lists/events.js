@@ -35,12 +35,9 @@ const onGetList = (event) => {
 
 const onDeleteList = function(event){
   event.preventDefault();
-  // let bookId = $('#delete-book-id').val();
-  // multiple ways to do everything.
-  // However prefer this way.
-
-  let data = getFormFields(event.target);
-  api.destroy(data.list.id)
+let id = event.target.dataset.id;
+  // let data = getFormFields(event.target);
+  api.destroy(id)
     .then(ui.onDeleteSuccess)
     .catch(ui.onError);
 };
@@ -66,12 +63,13 @@ const onCreateList = function(event){
 
 const addHandlers = () => {
   $('#book-search').on('submit', onGetList);
-  $('.remove-list').on('click', onDeleteList);
   $('#edit-book').on('submit', onPatcheList);
   $('#create-book').on('submit', onCreateList);
   $('#getListButton').on('click', onGetList);
-
+  // $('.remove-list').on('click', onDeleteList);
+  $('.content').on('click', '.remove-list', onDeleteList);
 };
+
 module.exports = {
   addHandlers
 };

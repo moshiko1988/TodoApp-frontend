@@ -3,9 +3,14 @@
 
 {{#each lists as |list|}}
 
-  <ul data-id="{{id}}">
-    <li><h1 data-id="{{list.id}}">ID: {{id}} Note: {{note}} </li>
-  <li><button type="button" name="button" class="remove-list">Remove</button></li>
-</ul>
+  <table class="table" data-id="{{id}}">
+
+      <td><h3 data-id="{{list.id}}">{{note}}</h3></td>
+  <td><button data-id="{{list.id}}" type="button" name="button" class="remove-list glyphicon glyphicon-remove-sign"></button>
+
+
+
+  </td>
+</table>
 
 {{/each}}
