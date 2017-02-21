@@ -41,12 +41,12 @@ let id = event.target.dataset.id;
     .then(ui.onDeleteSuccess)
     .catch(ui.onError);
 };
-const onPatcheList = function(event){
+const onPatchList = function(event){
   event.preventDefault();
-
-
+  console.log(event.target);
+let id = event.target.dataset.id;
   let data = getFormFields(event.target);
-  api.patch(data.list.id, data)
+  api.patch(id, data)
     .then(ui.onPatchSuccess)
     .catch(ui.onError);
 };
@@ -63,11 +63,12 @@ const onCreateList = function(event){
 
 const addHandlers = () => {
   $('#book-search').on('submit', onGetList);
-  $('#edit-book').on('submit', onPatcheList);
+  // $('#edit-book').on('submit', onPatcheList);
   $('#create-book').on('submit', onCreateList);
   $('#getListButton').on('click', onGetList);
   // $('.remove-list').on('click', onDeleteList);
   $('.content').on('click', '.remove-list', onDeleteList);
+  $('.content').on('submit', '.edit-book', onPatchList);
 };
 
 module.exports = {

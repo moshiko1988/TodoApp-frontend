@@ -9,7 +9,26 @@
   <td><button data-id="{{list.id}}" type="button" name="button" class="remove-list glyphicon glyphicon-remove-sign"></button>
 
 
+    <li data-id="{{list.id}}" class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>edit</b> </a>
+      <ul  class="dropdown-menu">
+        <li>
+          <div class="row">
+            <div class="col-md-12">
 
+
+              <form data-id="{{list.id}}" class='books edit-book' >
+                <div class="form-group">
+                  <input data-id="{{list.id}}" type="text" name="list[note]" placeholder="Edit list ">
+                </div>
+                <button data-id="{{list.id}}" type="submit" class="btn btn-info">Edit Note </button>
+              </form>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
   </td>
 </table>
 

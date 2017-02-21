@@ -7,7 +7,7 @@ const getListSuccess = (data) => {
   console.log(data);
   let showListHtml = showListTemplate({ lists: data.lists });
   $('.content').empty().append(showListHtml);
-
+console.table(data.lists);
 };
 
 
