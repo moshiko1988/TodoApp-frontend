@@ -25,7 +25,7 @@ const onError = function (response) {
 };
 
 const onDeleteSuccess = function () {
-  console.log('2 was successfully deleted.');
+  console.log('list was successfully deleted.');
 };
 const onPatchSuccess = function () {
   console.log('1 was successfully patched.');
