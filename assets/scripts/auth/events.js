@@ -33,7 +33,7 @@ const onSignIn = function (event) {
     .then(ui.signInSuccess)
     .then(ui.success)
 
-    .catch(ui.failure);
+    .catch(ui.signInError);
 
 };
 
@@ -43,10 +43,10 @@ const onChangePassword = function (event) {
   let data = getFormFields(event.target);
 
   api.changePassword(data)
-    .then(ui.changePasswordsuccess)
+    .then(ui.changePasswordSuccess)
     .then(ui.success)
 
-    .catch(ui.failure);
+    .catch(ui.changePasswordError);
 };
 
 const onSignOut = function (event) {
@@ -65,12 +65,15 @@ const onSignOut = function (event) {
 const addHandlers = () => {
 $('.changebtn').hide();
 $('#sign-out').hide();
-
-
+$('#getListButton').hide();
+$('#add-button').hide();
   $('#sign-up').on('submit', onSignUp);
-  $('#sign-in').on('submit', onSignIn);
+  $('#signin').on('submit', onSignIn);
   $('#change-password').on('submit', onChangePassword);
   $('#sign-out').on('click', onSignOut);
+  $('#warning').hide();
+  $('#created').hide();
+  $('#edited').hide();
 };
 
 module.exports = {

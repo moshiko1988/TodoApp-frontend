@@ -16,9 +16,12 @@
 <body>
   <h1> TodoApp</h1>
   <h2> because you dont need to remember everything</h2>
-
+<p id="warning" class="alert alert-danger" role="alert"></p>
   <!-- nav bar  -->
   <ul class="nav">
+
+
+
 
 
 
@@ -28,9 +31,9 @@
 
 
 
-      <li class="dropdown">
+      <li id="add-button" class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Add list</b> </a>
-        <ul id="add-button" class="dropdown-menu">
+        <ul  class="dropdown-menu">
           <li>
             <div class="row">
               <div class="col-md-12">
@@ -41,7 +44,7 @@
                       <input type="text" name="list[note]" placeholder="Create a Note ">
 
                     </div>
-                    <button type="submit" class="btn btn-info">create Note </button>
+                    <button type="submit" class="btn btn-info">create a list </button>
                   </form>
 
               </div>
@@ -52,6 +55,8 @@
 
 
   </ul>
+
+
   <!-- nav bar  auth-->
   <ul class="buttons">
     <li id="sign-up-btb" class="dropdown">
@@ -67,17 +72,20 @@
 
                   <label>
                   Email
-                  <input type="text" name="credentials[email]">
+
+
+                  <input type="email" name="credentials[email]" placeholder="Enter your email" required>
+
                 </label>
                   <label>
                   Password
-                  <input type="password" name="credentials[password]">
+                  <input id="password" type="password" name="credentials[password]" required placeholder="Confirm Password" pattern=".{4,}">
                 </label>
                   <label>
                   Password Confirmation
-                  <input type="password" name="credentials[password_confirmation]">
+                  <input id="confirm_password" type="password" name="credentials[password_confirmation]" placeholder="Enter your password" required pattern=".{4,}">
                 </label>
-                  <input type="submit" name="submit" value="Sign up!">
+                  <input type="submit" name="submit" value="submit">
                 </fieldset>
               </form>
 
@@ -95,16 +103,16 @@
             <div class="col-md-12">
 
 
-              <form id="sign-in">
+              <form id="signin">
                 <fieldset>
 
                   <label>
                           Email
-                          <input type="text" name="credentials[email]">
+                          <input type="email" name="credentials[email]" required>
                         </label>
                   <label>
                           Password
-                          <input type="password" name="credentials[password]">
+                          <input type="password" name="credentials[password]" required  pattern=".{4,}" title="username and password must match">
                         </label>
                   <input type="submit" name="submit" value="Sign in!">
                 </fieldset>
@@ -148,6 +156,10 @@
         <li><button type="button" name="button">Sign In</button></li>
         <li><button type="button" name="button">Change Password</button></li> -->
   </ul>
+  <p id="created" class="alert alert-success" role="alert"></p>
+  <p id="edited"class="alert alert-warning" role="alert"></p>
+
+
 
 
     <div id="content" class="content"></div>

@@ -81,6 +81,7 @@ const addHandlers = () => {
   // $('.remove-list').on('click', onDeleteList);
   $('.content').on('click', '.remove-list', onDeleteList);
   $('.content').on('submit', '.edit-book', onPatchList);
+        $('#delete').hide();
 };
 
 module.exports = {

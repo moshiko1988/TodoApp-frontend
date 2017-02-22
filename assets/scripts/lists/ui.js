@@ -24,10 +24,15 @@ const onSuccess = function (data) {
 
 const onDeleteSuccess = function () {
   console.log('list was successfully deleted.');
-
+  $('#edited').text("list was successfully deleted.");
+  $('#edited').fadeIn(900);
+  $('#edited').fadeOut(600);
 };
 const onPatchSuccess = function () {
   console.log('1 was successfully patched.');
+  $('#created').text("list was successfully edited.");
+  $('#created').fadeIn(900);
+  $('#created').fadeOut(600);
 };
 const onCreateSuccess = function (data) {
   console.log(data);
