@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
   <title>TodoApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,9 +15,23 @@
 </head>
 
 <body>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
   <h1> TodoApp</h1>
   <h2> because you dont need to remember everything</h2>
+  <div class="fb-follow" data-href="https://www.facebook.com/moshiko.srur" data-layout="button_count" data-size="large" data-show-faces="true"></div>
 <p id="warning" class="alert alert-danger" role="alert"></p>
+
   <!-- nav bar  -->
   <ul class="nav">
 
@@ -163,6 +178,7 @@
 
 
     <div id="content" class="content"></div>
+
 </body>
 
 </html>
