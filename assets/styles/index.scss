@@ -1,168 +1,192 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
-@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url( 'https://fonts.googleapis.com/css?family=Lobster');
 
-body{
-
+body {
   background: linear-gradient(100deg, #14c0ed , #cddbff 100%);
   font-family: 'Lobster', cursive;
 }
-h1{
+
+h1 {
   text-align: center;
   color: rgba(#34424f, 1);
   text-decoration: underline;
   font-size: 4.5em;
 }
-h2{
-text-align: center;
-color: rgba(#34424f, 1);
+
+h2 {
+  text-align: center;
+  color: rgba(#34424f, 1);
 }
-.nav{
-background-color: rgba(#34424f, 1);
-list-style: none;
-text-align: center;
-padding: 20px 0 20px 0;
+
+.nav {
+  background-color: rgba(#34424f, 1);
+  list-style: none;
+  text-align: center;
+  padding: 20px 0;
 }
+
 .nav > li {
   display: inline-block;
-  padding: 0 50px 0 50px;
+  padding: 0 50px;
   color: white;
   font-size: 1.5em;
-  // width: 100%;
-
 }
-.nav > li:hover{
+
+.nav > li:hover {
   color: pink;
 }
-.buttons{
+
+.buttons {
   background-color: rgba(#667786, 1);
   list-style: none;
   text-align: center;
 }
+
 .buttons > li {
   display: inline-block;
-  // padding: 0 30px 0 30px;
+}
 
+.buttons > li:hover {
+  background-color: rgba(#34424f, 1);
 }
-.buttons > li:hover{
-  background-color:rgba(#34424f, 1);
-}
+
 #sign-up-btb > a > b {
   color: white;
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
   font-size: 1.3em;
 }
-body > ul.buttons > li.dropdown.signinhide > a > b{
+
+body > ul.buttons > li.dropdown.signinhide > a > b {
   color: white;
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
   font-size: 1.3em;
 }
-body > ul.buttons > li.dropdown.changebtn > a > b{
+
+body > ul.buttons > li.dropdown.changebtn > a > b {
   color: white;
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
   font-size: 1.3em;
 }
-#sign-out > b{
+
+#sign-out > b {
   color: white;
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
   font-size: 1.3em;
 }
+
 #sign-up-btb > a > b:hover {
   color: pink;
 }
-body > ul.buttons > li.dropdown.signinhide > a > b:hover{
-  color: pink;
-}
-body > ul.buttons > li.dropdown.changebtn > a > b:hover{
-  color: pink;
-}
-#sign-out > b:hover{
+
+body > ul.buttons > li.dropdown.signinhide > a > b:hover {
   color: pink;
 }
 
-.container{
-padding: 20px;
-width: 500px;
-margin: 0 auto;
-margin-top: 40px;
-background: white;
-border-radius: 5px;
-font-size: 1.5em;}
+body > ul.buttons > li.dropdown.changebtn > a > b:hover {
+  color: pink;
+}
+
+#sign-out > b:hover {
+  color: pink;
+}
+
+.container {
+  padding: 20px;
+  width: 500px;
+  margin: 40px auto 0;
+  background: white;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
 
 form {
-display: inline-block;
+  display: inline-block;
 }
 
-input{
-padding: 4px 75px 4px 75px;
+input {
+  padding: 4px 75px;
 }
 
-#button{
-display: inline-block;
-background-color:#fc999b;
-color:#ffffff;
-border-radius: 5px;
-text-align:center;
-margin-top:2px;
-padding: 5px 15px;
+#button {
+  display: inline-block;
+  background-color: #fc999b;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2px;
+  padding: 5px 15px;
 }
 
-#button:hover{
-cursor: pointer;
-opacity: .8;
-}
-
-ol  {padding-left: 20px;
-}
-
-ol li {padding: 5px;color:#000;
-}
-
-ol li:nth-child(even){background: #dfdfdf;
-}
-
-.strike{text-decoration: line-through;
-}
-
-li:hover{
+#button:hover {
   cursor: pointer;
- }
-#content{
-   font-size: 8px;
-   text-align: center;
- }
-table{
+  opacity: 0.8;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  padding: 5px;
+  color: #000;
+}
+
+ol li:nth-child(even) {
+  background: #dfdfdf;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+#content {
+  font-size: 8px;
+  text-align: center;
+}
+
+table {
   text-align: center;
   font-size: 2.3em;
-
 }
- .table > tbody > tr > td{
+
+.table > tbody > tr > td {
   width: 50%;
+}
 
+.table > tbody > tr > td > li {
+  text-decoration: none;
+  list-style-type: none;
 }
- .table > tbody > tr > td > li{
-     text-decoration: none;
-     list-style-type: none;
- }
- #sign-in > fieldset {
-   text-align: center;
- }
-#sign-up > fieldset{
-   text-align: center;
+
+#sign-in > fieldset {
+  text-align: center;
 }
-#change-password > fieldset{
-   text-align: center;
+
+#sign-up > fieldset {
+  text-align: center;
 }
+
+#change-password > fieldset {
+  text-align: center;
+}
+
 #create-list {
   text-align: center;
 }
-#create-list > div > input{
-color: black;
-text-align: center;
+
+#create-list > div > input {
+  color: black;
+  text-align: center;
 }
-p{
-font-size: 1.3em;
-text-align: center;
+
+p {
+  font-size: 1.3em;
+  text-align: center;
 }
 
 input:invalid {
@@ -172,6 +196,7 @@ input:invalid {
 input:valid {
   border: 1px solid green;
 }
-.fb-follow{
+
+.fb-follow {
   float: right;
 }

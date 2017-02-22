@@ -7,15 +7,15 @@ const ui = require('./ui.js');
 const getFormFields = require('../../../lib/get-form-fields.js');
 
 const onGetList = (event) => {
-  if (event){
-  event.preventDefault();
-}
+  if (event) {
+    event.preventDefault();
+  }
   api.index()
     .then(ui.getListSuccess)
     .catch(ui.failure);
 };
 
-const onDeleteList = function(event){
+const onDeleteList = function(event) {
   event.preventDefault();
 
   let id = event.target.dataset.id;
@@ -24,21 +24,21 @@ const onDeleteList = function(event){
     .then(ui.onDeleteSuccess)
     .then(onGetList)
     .catch(ui.onError);
-    onGetList();
+  onGetList();
 };
-const onPatchList = function(event){
+const onPatchList = function(event) {
   event.preventDefault();
-  console.log(event.target);
+  // console.log(event.target);
   let id = event.target.dataset.id;
   let data = getFormFields(event.target);
   api.patch(id, data)
     .then(ui.onPatchSuccess)
     .then(onGetList)
     .catch(ui.onError);
-    onGetList();
+  onGetList();
 
 };
-const onCreateList = function(event){
+const onCreateList = function(event) {
   event.preventDefault();
 
 
@@ -47,7 +47,7 @@ const onCreateList = function(event){
     .then(ui.onCreateSuccess)
     .then(onGetList)
     .catch(ui.onError);
-    onGetList();
+  onGetList();
 
 };
 
@@ -58,6 +58,11 @@ const addHandlers = () => {
   $('#getListButton').on('click', onGetList);
   $('.content').on('click', '.remove-list', onDeleteList);
   $('.content').on('submit', '.edit-list', onPatchList);
+  $('#clearListButton').on('click', function() {
+    $('.content').empty();
+  });
+
+
 
 };
 

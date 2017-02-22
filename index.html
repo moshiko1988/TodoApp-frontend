@@ -15,22 +15,29 @@
 </head>
 
 <body>
+  <!-- facebook button  -->
 
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
+
+  <!-- facebook button  -->
+  <div class="fb-follow" data-href="https://www.facebook.com/moshiko.srur" data-layout="button_count" data-size="large" data-show-faces="true"></div>
+  <p id="warning" class="alert alert-danger" role="alert"></p>
 
 
   <h1> TodoApp</h1>
   <h2> because you dont need to remember everything</h2>
-  <div class="fb-follow" data-href="https://www.facebook.com/moshiko.srur" data-layout="button_count" data-size="large" data-show-faces="true"></div>
-<p id="warning" class="alert alert-danger" role="alert"></p>
+
 
   <!-- nav bar  -->
   <ul class="nav">
@@ -39,34 +46,33 @@
 
 
 
-
-                <li> <a href="#" id="getListButton" >Get All Lists!</a></li>
-
-        <!-- <li> <a href="#" id="sign-out" class="  "><b>Sign Out</b> </a> </li> -->
+    <li> <a href="#" id="clearListButton">Clear All Lists!</a></li>
+    <li> <a href="#" id="getListButton">Get All Lists!</a></li>
 
 
 
-      <li id="add-button" class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Add list</b> </a>
-        <ul  class="dropdown-menu">
-          <li>
-            <div class="row">
-              <div class="col-md-12">
+
+    <li id="add-button" class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Add list</b> </a>
+      <ul class="dropdown-menu">
+        <li>
+          <div class="row">
+            <div class="col-md-12">
 
 
-                <form  id="create-list">
-                    <div class="form-group">
-                      <input type="text" name="list[note]" placeholder="Create a Note ">
+              <form id="create-list">
+                <div class="form-group">
+                  <input type="text" name="list[note]" placeholder="Create a Note ">
 
-                    </div>
-                    <button type="submit" class="btn btn-info">create a list </button>
-                  </form>
+                </div>
+                <button type="submit" class="btn btn-info">create a list </button>
+              </form>
 
-              </div>
             </div>
-          </li>
-        </ul>
-      </li>
+          </div>
+        </li>
+      </ul>
+    </li>
 
 
   </ul>
@@ -167,17 +173,17 @@
     </li>
     <li> <a href="#" id="sign-out" class="  "><b>Sign Out</b> </a> </li>
 
-    <!-- <li><button type="button" name="button">Sign Out</button></li>
-        <li><button type="button" name="button">Sign In</button></li>
-        <li><button type="button" name="button">Change Password</button></li> -->
+
   </ul>
+
+  <!-- alart messeges -->
   <p id="created" class="alert alert-success" role="alert"></p>
-  <p id="edited"class="alert alert-warning" role="alert"></p>
+  <p id="edited" class="alert alert-warning" role="alert"></p>
 
 
 
-
-    <div id="content" class="content"></div>
+  <!-- list content  -->
+  <div id="content" class="content"></div>
 
 </body>
 

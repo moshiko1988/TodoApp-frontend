@@ -8,7 +8,7 @@ const ui = require('./ui');
 
 const store = require('../store');
 
-const onSignUp = function (event) {
+const onSignUp = function(event) {
   event.preventDefault();
 
   let data = getFormFields(event.target);
@@ -20,7 +20,7 @@ const onSignUp = function (event) {
     .catch(ui.failure);
 };
 
-const onSignIn = function (event) {
+const onSignIn = function(event) {
   event.preventDefault();
 
   let data = getFormFields(event.target);
@@ -37,7 +37,7 @@ const onSignIn = function (event) {
 
 };
 
-const onChangePassword = function (event) {
+const onChangePassword = function(event) {
   event.preventDefault();
 
   let data = getFormFields(event.target);
@@ -49,7 +49,7 @@ const onChangePassword = function (event) {
     .catch(ui.changePasswordError);
 };
 
-const onSignOut = function (event) {
+const onSignOut = function(event) {
   event.preventDefault();
 
   api.signOut()
@@ -63,10 +63,10 @@ const onSignOut = function (event) {
 };
 
 const addHandlers = () => {
-$('.changebtn').hide();
-$('#sign-out').hide();
-$('#getListButton').hide();
-$('#add-button').hide();
+  $('.changebtn').hide();
+  $('#sign-out').hide();
+  $('#getListButton').hide();
+  $('#add-button').hide();
   $('#sign-up').on('submit', onSignUp);
   $('#signin').on('submit', onSignIn);
   $('#change-password').on('submit', onChangePassword);
@@ -74,6 +74,7 @@ $('#add-button').hide();
   $('#warning').hide();
   $('#created').hide();
   $('#edited').hide();
+  $('#clearListButton').hide();
 };
 
 module.exports = {
