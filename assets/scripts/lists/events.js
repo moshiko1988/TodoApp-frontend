@@ -27,7 +27,9 @@ const getFormFields = require('../../../lib/get-form-fields.js');
 //
 // };
 const onGetList = (event) => {
+  if (event){
   event.preventDefault();
+}
   api.index()
     .then(ui.getListSuccess)
     .catch(ui.failure);
@@ -35,20 +37,27 @@ const onGetList = (event) => {
 
 const onDeleteList = function(event){
   event.preventDefault();
-let id = event.target.dataset.id;
+
+  let id = event.target.dataset.id;
+
   // let data = getFormFields(event.target);
   api.destroy(id)
     .then(ui.onDeleteSuccess)
+    .then(onGetList)
     .catch(ui.onError);
+    onGetList();
 };
 const onPatchList = function(event){
   event.preventDefault();
   console.log(event.target);
-let id = event.target.dataset.id;
+  let id = event.target.dataset.id;
   let data = getFormFields(event.target);
   api.patch(id, data)
     .then(ui.onPatchSuccess)
+    .then(onGetList)
     .catch(ui.onError);
+    onGetList();
+
 };
 const onCreateList = function(event){
   event.preventDefault();
@@ -57,7 +66,10 @@ const onCreateList = function(event){
   let data = getFormFields(event.target);
   api.post(data)
     .then(ui.onCreateSuccess)
+    .then(onGetList)
     .catch(ui.onError);
+    onGetList();
+
 };
 
 

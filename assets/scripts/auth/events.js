@@ -14,7 +14,9 @@ const onSignUp = function (event) {
   let data = getFormFields(event.target);
 
   api.signUp(data)
+    .then(ui.signUpSuccess)
     .then(ui.success)
+
     .catch(ui.failure);
 };
 
@@ -28,7 +30,9 @@ const onSignIn = function (event) {
       store.user = response.user;
       return store.user;
     })
+    .then(ui.signInSuccess)
     .then(ui.success)
+
     .catch(ui.failure);
 
 };
@@ -39,7 +43,9 @@ const onChangePassword = function (event) {
   let data = getFormFields(event.target);
 
   api.changePassword(data)
+    .then(ui.changePasswordsuccess)
     .then(ui.success)
+
     .catch(ui.failure);
 };
 
@@ -51,11 +57,16 @@ const onSignOut = function (event) {
       delete store.user;
       return store;
     })
+    .then(ui.signOutSuccess)
     .then(ui.success)
     .catch(ui.failure);
 };
 
 const addHandlers = () => {
+$('.changebtn').hide();
+$('#sign-out').hide();
+
+
   $('#sign-up').on('submit', onSignUp);
   $('#sign-in').on('submit', onSignIn);
   $('#change-password').on('submit', onChangePassword);

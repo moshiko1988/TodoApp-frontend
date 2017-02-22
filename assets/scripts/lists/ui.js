@@ -7,7 +7,7 @@ const getListSuccess = (data) => {
   console.log(data);
   let showListHtml = showListTemplate({ lists: data.lists });
   $('.content').empty().append(showListHtml);
-console.table(data.lists);
+  console.table(data.lists);
 };
 
 
@@ -20,12 +20,11 @@ const onSuccess = function (data) {
     console.table(data.lists);
   }
 };
-const onError = function (response) {
-  console.error(response);
-};
+
 
 const onDeleteSuccess = function () {
   console.log('list was successfully deleted.');
+
 };
 const onPatchSuccess = function () {
   console.log('1 was successfully patched.');
@@ -33,6 +32,7 @@ const onPatchSuccess = function () {
 const onCreateSuccess = function (data) {
   console.log(data);
   console.log('list was successfully created.');
+  $('#create-book > div > input').val('');
 };
 
 
@@ -40,7 +40,6 @@ const onCreateSuccess = function (data) {
 
 module.exports = {
   onSuccess,
-  onError,
   onDeleteSuccess,
   onPatchSuccess,
   onCreateSuccess,
