@@ -17,7 +17,7 @@ const onSignUp = function (event) {
     .then(ui.signUpSuccess)
     .then(ui.success)
 
-    .catch(ui.failure);
+    .catch(ui.signUpError);
 };
 
 const onSignIn = function (event) {

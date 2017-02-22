@@ -55,14 +55,23 @@ const signInError = (error) => {
 };
 const changePasswordError = (error) => {
   console.error(error);
-
+  $('#change-password > fieldset > label > input').val('');
     $('#warning').text("Password is not correct. Please try again.");
     $('#warning').slideDown();
 
     $('#warning').delay(2000).slideUp();
 
 };
+const signUpError = (error) => {
+  console.error(error);
+  $('#sign-up > fieldset > label > input').val('');
 
+    $('#warning').text("Invalid email or password. Please try again.");
+    $('#warning').slideDown();
+
+    $('#warning').delay(2000).slideUp();
+
+};
 
 const success = (data) => {
   if (data) { console.log(data); }
@@ -76,5 +85,6 @@ module.exports = {
   signUpSuccess,
   signInError,
   changePasswordError,
-  changePasswordSuccess
+  changePasswordSuccess,
+  signUpError
 };

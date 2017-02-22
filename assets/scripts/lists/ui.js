@@ -37,7 +37,7 @@ const onPatchSuccess = function () {
 const onCreateSuccess = function (data) {
   console.log(data);
   console.log('list was successfully created.');
-  $('#create-book > div > input').val('');
+  $('#create-list > div > input').val('');
 };
 
 

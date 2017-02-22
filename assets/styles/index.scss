@@ -3,7 +3,8 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
 body{
-  background-color: rgba(#14c0ed, 1);
+
+  background: linear-gradient(100deg, #14c0ed , #cddbff 100%);
   font-family: 'Lobster', cursive;
 }
 h1{
@@ -152,10 +153,10 @@ table{
 #change-password > fieldset{
    text-align: center;
 }
-#create-book {
+#create-list {
   text-align: center;
 }
-#create-book > div > input{
+#create-list > div > input{
 color: black;
 text-align: center;
 }
