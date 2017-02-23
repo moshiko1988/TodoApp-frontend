@@ -100,11 +100,11 @@
                 </label>
                   <label>
                   Password
-                  <input id="password" type="password" name="credentials[password]" required placeholder="Confirm Password" pattern=".{4,}">
+                  <input id="password" type="password" name="credentials[password]" required placeholder="Confirm Password" pattern=".{4,}" title="password should be 4 characters or more">
                 </label>
                   <label>
                   Password Confirmation
-                  <input id="confirm_password" type="password" name="credentials[password_confirmation]" placeholder="Enter your password" required pattern=".{4,}">
+                  <input id="confirm_password" type="password" name="credentials[password_confirmation]" placeholder="Enter your password" required pattern=".{4,}" title="password should be 4 characters or more">
                 </label>
                   <input type="submit" name="submit" value="submit">
                 </fieldset>
@@ -160,7 +160,7 @@
                       </label>
                   <label>
                         New Password
-                        <input type="password" name="passwords[new]">
+                        <input type="password" name="passwords[new]" pattern=".{4,}" title="password should be 4 characters or more">
                       </label>
 
                   <input type="submit" name="submit" value="Change Password!">

@@ -43,7 +43,9 @@ const signOutSuccess = () => {
 };
 const changePasswordSuccess = () => {
   // if (data) { console.log(data); }
-
+  $('#created').text("Password has successfully changed.");
+  $('#created').slideDown();
+  $('#created').delay(2000).fadeOut();
   $('#change-password > fieldset > label > input').val('');
 
 };
