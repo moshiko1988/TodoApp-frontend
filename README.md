@@ -1,5 +1,5 @@
  #### Todo App
- ##  **Todo APp is to-do list web application.**
+ ##  **Todo App is to-do list web application.**
   >>#  instructions:
   > sign up to create an account.
   > sign in to log in your account.
@@ -9,7 +9,7 @@
   > to remove a list click on the red X button next to the list.
   > to edit a list click on the edit button.
 
-  > all lists are privet and  will be automaticly saved under the user account.
+  > all lists are privet and  will be automatically saved under the user account.
 
 
 
