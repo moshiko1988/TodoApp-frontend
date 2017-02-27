@@ -8,7 +8,7 @@ const signUpSuccess = () => {
   $('#sign-up-btb').hide();
   $('#created').text("Sign up successfully. Please Sign in");
   $('#created').slideDown();
-  $('#created').delay(2000).fadeOut();
+  $('#created').fadeIn(1000).delay(1000).fadeOut(300);
 };
 const signInSuccess = () => {
   // if (data) { console.log(data); }
@@ -21,7 +21,7 @@ const signInSuccess = () => {
   $('#add-button').show();
   $('#created').text("Sign in successfully.");
   $('#created').slideDown();
-  $('#created').delay(2000).fadeOut();
+  $('#created').fadeIn(1000).delay(1000).fadeOut(300);
   $('#clearListButton').show();
 
 };
@@ -45,7 +45,7 @@ const changePasswordSuccess = () => {
   // if (data) { console.log(data); }
   $('#created').text("Password has successfully changed.");
   $('#created').slideDown();
-  $('#created').delay(2000).fadeOut();
+  $('#created').fadeIn(1000).delay(1000).fadeOut(300);
   $('#change-password > fieldset > label > input').val('');
 
 };
@@ -55,7 +55,7 @@ const signInError = () => {
   $('#warning').text("Invalid email or password. Please try again.");
   $('#warning').slideDown();
 
-  $('#warning').delay(2000).slideUp();
+  $('#warning').fadeIn(1000).delay(1000).fadeOut(300);
 
 };
 const changePasswordError = () => {
@@ -64,17 +64,17 @@ const changePasswordError = () => {
   $('#warning').text("Password is not correct. Please try again.");
   $('#warning').slideDown();
 
-  $('#warning').delay(2000).slideUp();
+  $('#warning').fadeIn(1000).delay(1000).fadeOut(300);
 
 };
 const signUpError = () => {
   // console.error(error);
-  $('#sign-up > fieldset > label > input').val('');
+  // $('#sign-up > fieldset > label > input').val('');
 
   $('#warning').text("Invalid email or password. Please try again.");
   $('#warning').slideDown();
 
-  $('#warning').delay(2000).slideUp();
+  $('#warning').fadeIn(1000).delay(1000).fadeOut(300);
 
 };
 

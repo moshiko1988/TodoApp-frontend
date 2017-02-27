@@ -1,15 +1,31 @@
+ #### Todo App
+ ##  **Todo APp is to-do list web application.**
+  >>#  instructions:
+  > sign up to create an account.
+  > sign in to log in your account.
+  > to create a list simply click the 'add list' button.
+  > to see your lists click the 'get all lists' button.
+  > to clear lists click the 'clear all lists' button.
+  > to remove a list click on the red X button next to the list.
+  > to edit a list click on the edit button.
 
-Todo App  is to-do list web application.
+  > all lists are privet and  will be automaticly saved under the user account.
 
-linkt to App : https://moshiko1988.github.io/TodoApp-frontend/
 
-The user must sign up and sign in to use it.
 
-User should be able to create, edit and delete lists
+## links
 
-User could see all of the list by clicking 'Get all lists'
-and clearing by 'Clear all lists'
+> linkt to App : [TodoApp](https://moshiko1988.github.io/TodoApp-frontend/)
 
-Link to back end : https://github.com/moshiko1988/TodoApp
+> Link to back end : [back end repo](https://github.com/moshiko1988/TodoApp)
 
-wireframe: http://imgur.com/4Bz5GON
+> wireframe: [linkt wireframe](http://imgur.com/4Bz5GON)
+
+## user stories
+
+> The user must sign up and sign in to use the app.
+
+> User should be able to create, edit and delete lists
+
+> User could see all of the list by clicking 'Get all lists'
+> and clearing by 'Clear all lists'

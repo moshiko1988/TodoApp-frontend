@@ -2,6 +2,7 @@
 // const index = require('../index');
 const api = require('./api.js');
 const ui = require('./ui.js');
+const store = require('../store.js');
 // attach getFormFields globally
 
 const getFormFields = require('../../../lib/get-form-fields.js');
@@ -11,6 +12,11 @@ const onGetList = (event) => {
     event.preventDefault();
   }
   api.index()
+    .then((response)=>{
+      store.lists = response.lists;
+      // console.log(store.lists.length);
+      return store;
+    })
     .then(ui.getListSuccess)
     .catch(ui.failure);
 };
@@ -24,7 +30,7 @@ const onDeleteList = function(event) {
     .then(ui.onDeleteSuccess)
     .then(onGetList)
     .catch(ui.onError);
-  onGetList();
+  // onGetList();
 };
 const onPatchList = function(event) {
   event.preventDefault();
@@ -47,7 +53,7 @@ const onCreateList = function(event) {
     .then(ui.onCreateSuccess)
     .then(onGetList)
     .catch(ui.onError);
-  onGetList();
+
 
 };
 
