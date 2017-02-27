@@ -12,9 +12,25 @@
 > - to edit a list click on the edit button.
 > - all lists are privet and  will be automatically saved under the user account.
 
+## Process and Technologies
 
 
-## links
+> As this is the first full stack project that i worked on i approached this project carefully and > slowly.
+> I started with the back end, i used ruby on rails to  created the database that my app need to function
+> and then i moved to work on the front end.
+> I created basic layout with html and css and then worked displaying the content with handlebars
+> when i got to a point that my app worked as expected i started working on the UI.
+> I styled the page with css and bootstrap.
+
+
+
+## Future Goals and Unsolved Problems
+
+> - Making a User creating different notes whitin the app that contain different lists
+> - Making the user be able to change the order of the list
+> - Making the user be able to upload photos
+
+## Links
 
 > linkt to App : [TodoApp](https://moshiko1988.github.io/TodoApp-frontend/)
 
@@ -22,7 +38,7 @@
 
 > wireframe: [linkt wireframe](http://imgur.com/4Bz5GON)
 
-## user stories
+## User Stories
 
 > The user must sign up and sign in to use the app.
 
