@@ -1,17 +1,16 @@
 
-### Todo APP.
 
 
 ##  Todo App is to-do list web application.
->  instructions:
-> sign up to create an account.
-> sign in to log in your account.
-> to create a list simply click the 'add list' button.
-> to see your lists click the 'get all lists' button.
-> to clear lists click the 'clear all lists' button.
-> to remove a list click on the red X button next to the list.
-> to edit a list click on the edit button.
-> all lists are privet and  will be automatically saved under the user account.
+>  #instructions:
+> -sign up to create an account.
+> -sign in to log in your account.
+> -to create a list simply click the 'add list' button.
+> -to see your lists click the 'get all lists' button.
+> -to clear lists click the 'clear all lists' button.
+> -to remove a list click on the red X button next to the list.
+> -to edit a list click on the edit button.
+> -all lists are privet and  will be automatically saved under the user account.
 
 
 
