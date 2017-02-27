@@ -28,7 +28,7 @@
 
 ## Future Goals and Unsolved Problems
 
-> - Making a user create different notes whitin the app that contain different lists
+> - Making a user create different notes within the app that contain different lists
 > - Making the user be able to change the order of the list
 > - Making the user be able to upload photos
 
@@ -38,7 +38,7 @@
 
 > Link to back end : [back end repo](https://github.com/moshiko1988/TodoApp)
 
-> Wireframe: [linkt wireframe](http://imgur.com/4Bz5GON)
+> Wireframe: [link to wireframe](http://imgur.com/4Bz5GON)
 
 ## User Stories
 

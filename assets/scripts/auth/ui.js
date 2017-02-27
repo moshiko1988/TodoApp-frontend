@@ -50,6 +50,8 @@ const changePasswordSuccess = () => {
   $('#created').slideDown();
   $('#created').fadeIn(1000).delay(1000).fadeOut(300);
   $('#change-password > fieldset > label > input').val('');
+    $('.changebtn').hide();
+
 
 };
 const signInError = () => {
