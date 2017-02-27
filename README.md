@@ -2,11 +2,9 @@
 
 
 ##  Todo App is to-do list web application.
-<<<<<<< HEAD
->  #instructions:
-=======
+
 >  instructions:
->>>>>>> list
+
 > - sign up to create an account.
 > - sign in to log in your account.
 > - to create a list simply click the 'add list' button.
