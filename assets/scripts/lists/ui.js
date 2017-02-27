@@ -15,10 +15,11 @@ const getListSuccess = (data) => {
   if(parseInt(store.lists.length) === 0){
     $('#edited2').text("empty list");
     $('#edited2').fadeIn(1000).delay(1000).fadeOut(300);
+}
     // $('#edited2').fadeOut(300);
-  }else {
-    console.log(store.lists);
-  }
+  // }else {
+  //   console.log(store.lists);
+  // }
   // event.onGetList();
 };
 
