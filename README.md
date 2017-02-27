@@ -1,5 +1,5 @@
- #### Todo App
- ##  **Todo App is to-do list web application.**
+ #### Todo App.
+ ##  Todo App is to-do list web application.
   >>#  instructions:
   > sign up to create an account.
   > sign in to log in your account.
