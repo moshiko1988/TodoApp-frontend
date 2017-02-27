@@ -34,6 +34,9 @@ const signOutSuccess = () => {
   $('.content').empty();
   $('#signin > fieldset > label > input').val('');
   $('#sign-up > fieldset > label > input').val('');
+  $('#change-password > fieldset > label > input').val('');
+  $('#create-list > div > input').val('');
+
   $('#getListButton').hide();
   $('#add-button').hide();
   $('#show').hide();
