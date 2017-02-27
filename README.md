@@ -15,34 +15,34 @@
 ## Process and Technologies
 
 
-> As this is the first full stack project that i worked on i approached this project carefully and > slowly.
-> I started with the back end, i used ruby on rails to  created the database that my app need to function
-> and then i moved to work on the front end.
-> I created basic layout with html and css and then worked displaying the content with handlebars
-> when i got to a point that my app worked as expected i started working on the UI.
-> I styled the page with css and bootstrap.
+> As this is the first full stack project that I worked on I approached this project carefully and slowly.
+> I started with the back end, so I used ruby on rails to create the database that my app needs to function
+> and then I moved on to work on the front end.
+> I created a basic layout with html and css and then worked on displaying the content with handlebars
+> when I got to the point where my app worked as expected.Then, I started working on the UI.
+> I stylized the page with css and bootstrap.
 
 
 
 ## Future Goals and Unsolved Problems
 
-> - Making a User creating different notes whitin the app that contain different lists
+> - Making a user create different notes whitin the app that contain different lists
 > - Making the user be able to change the order of the list
 > - Making the user be able to upload photos
 
 ## Links
 
-> linkt to App : [TodoApp](https://moshiko1988.github.io/TodoApp-frontend/)
+> Link to App : [TodoApp](https://moshiko1988.github.io/TodoApp-frontend/)
 
 > Link to back end : [back end repo](https://github.com/moshiko1988/TodoApp)
 
-> wireframe: [linkt wireframe](http://imgur.com/4Bz5GON)
+> Wireframe: [linkt wireframe](http://imgur.com/4Bz5GON)
 
 ## User Stories
 
 > The user must sign up and sign in to use the app.
 
-> User should be able to create, edit and delete lists
+> User should be able to create, edit, and delete lists
 
-> User could see all of the list by clicking 'Get all lists'
+> User should see all of the lists by clicking 'Get all lists'
 > and clearing by 'Clear all lists'
