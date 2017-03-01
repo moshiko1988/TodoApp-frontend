@@ -1,9 +1,8 @@
 'use strict';
-// const index = require('../index');
+
 const api = require('./api.js');
 const ui = require('./ui.js');
 const store = require('../store.js');
-// attach getFormFields globally
 
 const getFormFields = require('../../../lib/get-form-fields.js');
 
@@ -12,9 +11,8 @@ const onGetList = (event) => {
     event.preventDefault();
   }
   api.index()
-    .then((response)=>{
+    .then((response) => {
       store.lists = response.lists;
-      // console.log(store.lists.length);
       return store;
     })
     .then(ui.getListSuccess)
@@ -23,36 +21,32 @@ const onGetList = (event) => {
 
 const onDeleteList = function(event) {
   event.preventDefault();
-
   let id = event.target.dataset.id;
-
   api.destroy(id)
     .then(ui.onDeleteSuccess)
     .then(onGetList)
     .catch(ui.onError);
-  // onGetList();
 };
+
 const onPatchList = function(event) {
   event.preventDefault();
-  // console.log(event.target);
   let id = event.target.dataset.id;
   let data = getFormFields(event.target);
   api.patch(id, data)
     .then(ui.onPatchSuccess)
     .then(onGetList)
     .catch(ui.onError);
-  onGetList();
-
 };
+
 const onCreateList = function(event) {
   event.preventDefault();
-
-
   let data = getFormFields(event.target);
   api.post(data)
     .then(ui.onCreateSuccess)
     .then(onGetList)
-    .then(() => { $("#add-button").toggleClass("open");})
+    .then(() => {
+      $("#add-button").toggleClass("open");
+    })
     .catch(ui.onError);
 
 

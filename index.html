@@ -17,52 +17,19 @@
 </head>
 
 <body>
-  <!-- facebook button  -->
-  <!--
-  <div id="fb-root"></div>
-  <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script> -->
-
-
-
-  <!--github button -->
-  <!--
-<div><a class="github-button" href="https://github.com/moshiko1988" aria-label="Follow @moshiko1988 on GitHub">Follow @moshiko1988</a></div> -->
-
-  <!-- facebook button  -->
-  <!-- <div>
-<div class="fb-follow" data-href="https://www.facebook.com/moshiko.srur" data-layout="button_count" data-size="large" data-show-faces="true"></div>
-
-</div> -->
 
   <div class="alerts">
     <p id="warning" class="alert alert-danger" role="alert"></p>
-
   </div>
+
   <h1> TodoApp</h1>
   <h2> because you dont need to remember everything</h2>
 
-
   <!-- nav bar  -->
   <ul class="nav">
-
-
-
-
-
     <li> <a href="#" id="clearListButton">Clear All Lists!</a></li>
+
     <li> <a href="#" id="getListButton">Get All Lists!</a></li>
-
-
-
 
     <li id="add-button" class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Add list</b> </a>
@@ -70,25 +37,19 @@
         <li>
           <div class="row">
             <div class="col-md-12">
-
-
               <form id="create-list">
                 <div class="form-group">
                   <input type="text" name="list[note]" placeholder="Create a Note ">
-
                 </div>
                 <button type="submit" class="btn btn-info">create a list </button>
               </form>
-
             </div>
           </div>
         </li>
       </ul>
     </li>
 
-
   </ul>
-
 
   <!-- nav bar  auth-->
   <ul class="buttons">
@@ -98,17 +59,11 @@
         <li>
           <div class="row">
             <div class="col-md-12">
-
-
               <form id="sign-up">
                 <fieldset>
-
                   <label>
                   Email
-
-
                   <input type="email" name="credentials[email]" placeholder="Enter your email" required>
-
                 </label>
                   <label>
                   Password
@@ -134,11 +89,8 @@
         <li>
           <div class="row">
             <div class="col-md-12">
-
-
               <form id="signin">
                 <fieldset>
-
                   <label>
                           Email
                           <input type="email" name="credentials[email]" required>
@@ -155,17 +107,15 @@
         </li>
       </ul>
     </li>
+
     <li id="change-password-button" class="dropdown changebtn">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Change Password</b> </a>
       <ul id="change-password1" class="dropdown-menu">
         <li>
           <div class="row">
             <div class="col-md-12">
-
-
               <form id="change-password">
                 <fieldset>
-
                   <label>
                         Current Password
                         <input type="password" name="passwords[old]">
@@ -174,7 +124,6 @@
                         New Password
                         <input type="password" name="passwords[new]" pattern=".{4,}" title="password should be 4 characters or more">
                       </label>
-
                   <input type="submit" name="submit" value="Change Password!">
                 </fieldset>
               </form>
@@ -184,14 +133,9 @@
       </ul>
     </li>
     <li> <a href="#" id="sign-out" class="  "><b>Sign Out</b> </a> </li>
-
-
   </ul>
 
   <!-- alart messeges -->
-
-
-
   <div class="alerts">
     <p id="created" class="alert alert-success" role="alert"></p>
     <p id="edited" class="alert alert-warning" role="alert"></p>

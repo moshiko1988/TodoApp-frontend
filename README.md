@@ -12,7 +12,7 @@
 > - to clear lists click the 'clear all lists' button.
 > - to remove a list click on the red X button next to the list.
 > - to edit a list click on the edit button.
-> - all lists are privet and  will be automatically saved under the user account.
+> - all lists are private and  will be automatically saved under the user account.
 
 ## Process and Technologies
 

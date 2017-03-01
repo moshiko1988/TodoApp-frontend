@@ -25,9 +25,6 @@ const onCreateSuccess = function() {
   $('#create-list > div > input').val('');
 };
 
-
-
-
 module.exports = {
   onPatchSuccess,
   onCreateSuccess,
