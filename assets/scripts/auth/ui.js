@@ -1,17 +1,13 @@
 'use strict';
 
-
-
-
 const signUpSuccess = () => {
-  // if (data) { console.log(data); }
-  $('#sign-up-btb').hide();
+  $('#sign-up > fieldset > label > input').val('');
   $('#created').text("Sign up successfully. Please Sign in");
   $('#created').slideDown();
-  $('#created').fadeIn(1000).delay(1000).fadeOut(300);
+  $('#created').fadeIn(1000).delay(1500).fadeOut(300);
 };
+
 const signInSuccess = () => {
-  // if (data) { console.log(data); }
   $('#sign-up-btb').hide();
   $('.signinhide').hide();
   $('#change-password').show();
@@ -21,12 +17,11 @@ const signInSuccess = () => {
   $('#add-button').show();
   $('#created').text("Sign in successfully.");
   $('#created').slideDown();
-  $('#created').fadeIn(1000).delay(1000).fadeOut(300);
+  $('#created').fadeIn(1000).delay(1500).fadeOut(300);
   $('#clearListButton').show();
-
 };
+
 const signOutSuccess = () => {
-  // if (data) { console.log(data); }
   $('#sign-out').hide();
   $('.signinhide').show();
   $('#sign-up-btb').show();
@@ -36,51 +31,37 @@ const signOutSuccess = () => {
   $('#sign-up > fieldset > label > input').val('');
   $('#change-password > fieldset > label > input').val('');
   $('#create-list > div > input').val('');
-
   $('#getListButton').hide();
   $('#add-button').hide();
   $('#show').hide();
   $('#clearListButton').hide();
-
-
 };
+
 const changePasswordSuccess = () => {
-  // if (data) { console.log(data); }
   $('#created').text("Password has successfully changed.");
   $('#created').slideDown();
-  $('#created').fadeIn(1000).delay(1000).fadeOut(300);
+  $('#created').fadeIn(1000).delay(1500).fadeOut(300);
   $('#change-password > fieldset > label > input').val('');
-    $('.changebtn').hide();
-
-
 };
-const signInError = () => {
-  // console.error(error);
 
+const signInError = () => {
   $('#warning').text("Invalid email or password. Please try again.");
   $('#warning').slideDown();
-
-  $('#warning').fadeIn(1000).delay(1000).fadeOut(300);
-
+  $('#warning').fadeIn(1000).delay(1500).fadeOut(300);
 };
+
 const changePasswordError = () => {
-  // console.error(error);
   $('#change-password > fieldset > label > input').val('');
   $('#warning').text("Password is not correct. Please try again.");
   $('#warning').slideDown();
-
-  $('#warning').fadeIn(1000).delay(1000).fadeOut(300);
-
+  $('#warning').fadeIn(1000).delay(1500).fadeOut(300);
 };
-const signUpError = () => {
-  // console.error(error);
-  // $('#sign-up > fieldset > label > input').val('');
 
+const signUpError = () => {
   $('#warning').text("Invalid email or password. Please try again.");
   $('#warning').slideDown();
 
-  $('#warning').fadeIn(1000).delay(1000).fadeOut(300);
-
+  $('#warning').fadeIn(1000).delay(1500).fadeOut(300);
 };
 
 

@@ -52,6 +52,7 @@ const onCreateList = function(event) {
   api.post(data)
     .then(ui.onCreateSuccess)
     .then(onGetList)
+    .then(() => { $("#add-button").toggleClass("open");})
     .catch(ui.onError);
 
 

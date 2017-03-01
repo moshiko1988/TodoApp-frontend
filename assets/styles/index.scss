@@ -17,6 +17,7 @@ h1 {
 h2 {
   text-align: center;
   color: rgba(#34424f, 1);
+  font-family: 'Lucida Casual', 'Comic Sans MS';
 }
 
 .nav {
@@ -41,6 +42,7 @@ h2 {
   background-color: rgba(#667786, 1);
   list-style: none;
   text-align: center;
+  font-family: 'Lucida Casual', 'Comic Sans MS';
 }
 
 .buttons > li {
@@ -106,6 +108,7 @@ form {
 
 input {
   padding: 4px 75px;
+  font-family: 'Lucida Casual', 'Comic Sans MS';
 }
 
 #button {
@@ -196,7 +199,13 @@ input:invalid {
 input:valid {
   border: 1px solid green;
 }
-.alerts{
+
+.alerts {
   height: 55px;
   background: linear-gradient(100deg, #14c0ed , #cddbff 100%);
+  font-family: 'Lucida Casual', 'Comic Sans MS';
+}
+
+.edit-list {
+  text-align: center;
 }

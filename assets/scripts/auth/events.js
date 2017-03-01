@@ -16,6 +16,7 @@ const onSignUp = function(event) {
   api.signUp(data)
     .then(ui.signUpSuccess)
     .then(ui.success)
+    .then(() => { $("#sign-up-btb").toggleClass("open");})
 
     .catch(ui.signUpError);
 };
@@ -45,6 +46,7 @@ const onChangePassword = function(event) {
   api.changePassword(data)
     .then(ui.changePasswordSuccess)
     .then(ui.success)
+    .then(() => { $("#change-password-button").toggleClass("open");})
 
     .catch(ui.changePasswordError);
 };
