@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>TodoApp</title>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Do not add `link` tags unless you know what you are doing -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Do not add `script` tags unless you know what you are doing -->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body>
+
+  <div class="alerts">
+    <p id="warning" class="alert alert-danger" role="alert"></p>
+  </div>
+
+  <h1> TodoApp</h1>
+  <h2> because you dont need to remember everything</h2>
+
+  <!-- nav bar  -->
+  <ul class="nav">
+    <li> <a href="#" id="clearListButton">Clear All Lists!</a></li>
+
+    <li> <a href="#" id="getListButton">Get All Lists!</a></li>
+
+    <li id="add-button" class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Add list</b> </a>
+      <ul class="dropdown-menu">
+        <li>
+          <div class="row">
+            <div class="col-md-12">
+              <form id="create-list">
+                <div class="form-group">
+                  <input type="text" name="list[note]" placeholder="Create a Note ">
+                </div>
+                <button type="submit" class="btn btn-info">create a list </button>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <!-- nav bar  auth-->
+  <ul class="buttons">
+    <li id="sign-up-btb" class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Sign up</b> </a>
+      <ul id="sign-up1" class="dropdown-menu">
+        <li>
+          <div class="row">
+            <div class="col-md-12">
+              <form id="sign-up">
+                <fieldset>
+                  <label>
+                  Email
+                  <input type="email" name="credentials[email]" placeholder="Enter your email" required>
+                </label>
+                  <label>
+                  Password
+                  <input id="password" type="password" name="credentials[password]" required placeholder="Confirm Password" pattern=".{4,}" title="password should be 4 characters or more">
+                </label>
+                  <label>
+                  Password Confirmation
+                  <input id="confirm_password" type="password" name="credentials[password_confirmation]" placeholder="Enter your password" required pattern=".{4,}" title="password should be 4 characters or more">
+                </label>
+                  <input type="submit" name="submit" value="submit">
+                </fieldset>
+              </form>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="dropdown signinhide">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Sign in</b> </a>
+      <ul class="dropdown-menu">
+        <li>
+          <div class="row">
+            <div class="col-md-12">
+              <form id="signin">
+                <fieldset>
+                  <label>
+                          Email
+                          <input type="email" name="credentials[email]" required>
+                        </label>
+                  <label>
+                          Password
+                          <input type="password" name="credentials[password]" required  pattern=".{4,}" title="username and password must match">
+                        </label>
+                  <input type="submit" name="submit" value="Sign in!">
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li id="change-password-button" class="dropdown changebtn">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Change Password</b> </a>
+      <ul id="change-password1" class="dropdown-menu">
+        <li>
+          <div class="row">
+            <div class="col-md-12">
+              <form id="change-password">
+                <fieldset>
+                  <label>
+                        Current Password
+                        <input type="password" name="passwords[old]">
+                      </label>
+                  <label>
+                        New Password
+                        <input type="password" name="passwords[new]" pattern=".{4,}" title="password should be 4 characters or more">
+                      </label>
+                  <input type="submit" name="submit" value="Change Password!">
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li> <a href="#" id="sign-out" class="  "><b>Sign Out</b> </a> </li>
+  </ul>
+
+  <!-- alart messeges -->
+  <div class="alerts">
+    <p id="created" class="alert alert-success" role="alert"></p>
+    <p id="edited" class="alert alert-warning" role="alert"></p>
+    <p id="edited2" class="alert alert-warning" role="alert"></p>
+
+  </div>
+
+  <!-- list content  -->
+  <div id="content" class="content"></div>
+
+</body>
+
+</html>
